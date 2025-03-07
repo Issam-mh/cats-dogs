@@ -28,7 +28,7 @@ uploaded_file = st.file_uploader("Choisissez une image...", type=["jpg", "jpeg",
 if uploaded_file is not None:
     # Afficher l'image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Image chargée", use_column_width=True)
+    st.image(image, caption="Image chargée", use_container_width=True)
     
     # Ajouter un bouton pour lancer la prédiction
     if st.button("Classifier l'image"):
