@@ -6,8 +6,8 @@ from PIL import Image
 
 # Chemin où le modèle sera sauvegardé localement
 MODEL_PATH = os.path.join('models', 'cats_dogs_model.keras')
-# URL S3 de votre modèle
-MODEL_URL = "https://msde1.s3.eu-north-1.amazonaws.com/Cat%26Dogs_model_final.keras"
+# URL CloudFront S3 du modèle
+MODEL_URL = "https://d6alyo0falgy4.cloudfront.net/Cat%26Dogs_model_final.keras"
 
 # Cache pour le modèle chargé
 _model = None
